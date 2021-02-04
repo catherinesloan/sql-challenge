@@ -1,3 +1,6 @@
+employee_sql/*.py
+employee_sql/__pycache__
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
