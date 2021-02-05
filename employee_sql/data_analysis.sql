@@ -82,9 +82,9 @@ WHERE hire_date >= '1986-01-01' AND hire_date <= '1986-12-31'
 ORDER BY hire_date;
 
 -- 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
--- dept_manager has dept_no with emp_no
--- departments has dept_no and dept_name 
--- employees has last name, first name and emp no
+-- dept_manager = dept_no, emp_no
+-- departments = dept_no, dept_name 
+-- employees = last_name, first_name, emp no
 
 -- Need to do 2 joins so creating a view 
 CREATE VIEW managers_1 AS
@@ -106,8 +106,9 @@ FROM managers_1 as x
 INNER JOIN employees AS y
 ON x.emp_no=y.emp_no;
 
--- **REMEBER TO DELETE**
--- this lists all the managers names and first names, I need to do a join not IN
+/* here for my reference
+using the IN func instead of join lists all the managers names and first names
+need to do a join when want to add columns
 SELECT
 	last_name,
 	first_name
@@ -123,12 +124,12 @@ FROM employees WHERE emp_no IN (
 		)
 	)
 );
+*/
 
 -- 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
--- each employye, emp#, first name, last name, department name
--- dept_emp has emp_no and dept_no
--- departments has dept_name for dept_no
--- employees has emp_no and names
+-- dept_emp = emp_no, dept_no
+-- departments = dept_name, dept_no
+-- employees = emp_no, names
 
 -- trying multiple joins without creating view, could have done this on previous question
 SELECT 
@@ -175,7 +176,7 @@ SELECT
 FROM sales_2 AS s
 INNER JOIN departments as y ON (s.dept_no=y.dept_no);
 
--- Can also do this in one step
+-- Can also do this in the one step
 
 SELECT 
 	e.emp_no AS "Employee Number",
@@ -202,6 +203,7 @@ WHERE dept_name = 'Sales' OR dept_name = 'Development';
 
 -- 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 -- groupby of last names
+
 SELECT 
 	last_name AS "Last Name", 
 	COUNT(last_name) AS "Frequency Count"
