@@ -40,6 +40,7 @@ Inspected the CSVs and drew an [entity relationship diagram](https://github.com/
    - Generated a histogram to visualise the most common salary ranges for employees
    - Generated a bar chart of average salary by title
 
-<img width="401" alt="Screen Shot 2021-05-29 at 5 39 02 pm" src="https://user-images.githubusercontent.com/73929301/120062347-19356a80-c0a5-11eb-8faa-80d2ddf1e913.png"> <img width="434" alt="Screen Shot 2021-05-29 at 5 39 09 pm" src="https://user-images.githubusercontent.com/73929301/120062350-1c305b00-c0a5-11eb-9f36-513dea2ddd2a.png">
+<img width="401" alt="Screen Shot 2021-05-29 at 5 39 02 pm" src="https://user-images.githubusercontent.com/73929301/120062347-19356a80-c0a5-11eb-8faa-80d2ddf1e913.png"> 
+<img width="434" alt="Screen Shot 2021-05-29 at 5 39 09 pm" src="https://user-images.githubusercontent.com/73929301/120062350-1c305b00-c0a5-11eb-9f36-513dea2ddd2a.png">
 
 
