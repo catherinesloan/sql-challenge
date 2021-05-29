@@ -33,8 +33,6 @@ Inspected the CSVs and drew an [entity relationship diagram](https://github.com/
    - All employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
    - The frequency count of employee last names in descending order
 
-<img width="845" alt="Screen Shot 2021-05-29 at 5 40 38 pm" src="https://user-images.githubusercontent.com/73929301/120062346-13d82000-c0a5-11eb-8648-b831c1e328c4.png">
-
 4. **Bonus**
    - Imported the SQL database into Pandas, see [notebook here](https://github.com/catherinesloan/sql-challenge/blob/main/employee_sql/bonus_part.ipynb).
    - Generated a histogram to visualise the most common salary ranges for employees
